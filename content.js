@@ -3,7 +3,7 @@ export default {
   icon: {
     src: 'me.png',
     type: 'png',
-    sizes: '100x100',
+    sizes: '200x200',
   },
   name: 'Elli Greaves',
   pronouns: 'she/her',
