@@ -1,5 +1,10 @@
 export default {
   color: '#ff00b8',
+  icon: {
+    src: 'me.png',
+    type: 'png',
+    sizes: '100x100',
+  },
   name: 'Elli Greaves',
   pronouns: 'she/her',
   description: `
