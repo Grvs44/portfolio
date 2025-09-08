@@ -15,6 +15,7 @@ jobs:
           repository: Grvs44/portfolio-page
           latest: true
           tarBall: true
+          out-file-path: '.'
           extract: true
       - name: Run build
         run: ./scripts/build.sh
