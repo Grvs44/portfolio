@@ -19,9 +19,8 @@ jobs:
       - run: tree
       - name: Extract and move files
         run: |
-          tar -xvzf portfolio-page-*.tar.gz
           mv content.js Grvs44-portfolio-page-*
-          mv public/* Grvs44-portfolio-page-*/public
+          mv public/* Grvs44-portfolio-page-*/public || mv public Grvs44-portfolio-page-*
           mv Grvs44-portfolio-page-*/* .
       - name: Run build
         run: ./scripts/build.sh
