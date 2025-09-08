@@ -15,7 +15,7 @@ jobs:
           repository: Grvs44/portfolio-page
           latest: true
           tarBall: true
-          out-file-path: '.'
+          out-file-path: ''
           extract: true
       - run: tree
       - name: Move extracted files
