@@ -23,7 +23,7 @@ jobs:
           mv public/* Grvs44-portfolio-page-*/public || mv public Grvs44-portfolio-page-*
           mv Grvs44-portfolio-page-*/* .
       - name: Run build
-        run: ./scripts/build.sh
+        run: chmod +x ./scripts/build.sh && ./scripts/build.sh
       - name: Upload to action
         uses: actions/upload-artifact@v4
         with:
