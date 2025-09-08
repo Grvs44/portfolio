@@ -15,13 +15,14 @@ jobs:
           repository: Grvs44/portfolio-page
           latest: true
           tarBall: true
-          out-file-path: ''
           extract: true
       - run: tree
-      - name: Move extracted files
+      - name: Extract and move files
         run: |
-          rm portfolio-page/content.js
-          mv portfolio-page/* .
+          tar -xvzf portfolio-page-*.tar.gz
+          mv content.js Grvs44-portfolio-page-*
+          mv public/* Grvs44-portfolio-page-*/public
+          mv Grvs44-portfolio-page-*/* .
       - name: Run build
         run: ./scripts/build.sh
       - name: Upload to action
