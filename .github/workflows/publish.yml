@@ -17,6 +17,10 @@ jobs:
           tarBall: true
           out-file-path: '.'
           extract: true
+      - name: Move extracted files
+        run: |
+          rm portfolio-page/content.js
+          mv portfolio-page/* .
       - name: Run build
         run: ./scripts/build.sh
       - name: Upload to action
