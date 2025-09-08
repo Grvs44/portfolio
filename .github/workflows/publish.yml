@@ -17,6 +17,7 @@ jobs:
           tarBall: true
           out-file-path: '.'
           extract: true
+      - run: tree
       - name: Move extracted files
         run: |
           rm portfolio-page/content.js
