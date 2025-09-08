@@ -1,0 +1,25 @@
+name: Publish
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download latest Portfolio Page
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: Grvs44/portfolio-page
+          latest: true
+          tarBall: true
+          extract: true
+      - name: Run build
+        run: ./scripts/build.sh
+      - name: Upload to action
+        uses: actions/upload-artifact@v4
+        with:
+          name: page
+          path: ./build/*
