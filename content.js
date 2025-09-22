@@ -5,6 +5,7 @@ export default {
     type: 'png',
     sizes: '200x200',
   },
+  locale: 'en-gb',
   name: 'Elli Greaves',
   pronouns: 'she/her',
   description: `
