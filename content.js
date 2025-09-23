@@ -59,6 +59,7 @@ Initially, the Django and React code were stored in separate repositories, then 
     {
       name: 'ARMv1 Interpreter',
       photo: 'armv1.png',
+      alt: 'A screenshot of some ARMv1 Assembly code',
       text: `An assembler and interpreter for ARMv1 Assembly code written in Haskell, initially for a history research project during my third year at university.
 Despite being a "simple processor", ARM1 was still very complex so I was only able to create the assembler with partial functionality for my university project. I plan to continue working on this project when I have some spare time.
 I chose to create this project to explore the history of the ARM1 processor and its instruction set, which was written by Sophie Wilson, a trans woman who worked at Acorn Computers.
@@ -73,6 +74,7 @@ This project is important to me, in these times of trans erasure, to show a slic
     {
       name: 'Forza Telemetry Console',
       photo: 'console.jpeg',
+      alt: 'The telemetry console displaying best and last lap times, with most of the RPM LEDs lit up, and 0.15g of acceleration in the forwards direction',
       text: `An Arduino-based telemetry console compatible with the Forza racing games.
 It uses the games' UDP data out feature to display the RPM (the row of LEDs at the top), lap times (best lap and last lap), current game, whether the game is in menu or in a race, acceleration (in g, displayed on the LED matrix), and acceleration direction on the arrow LEDs.`,
       links: [
@@ -90,6 +92,7 @@ It uses the games' UDP data out feature to display the RPM (the row of LEDs at t
       name: 'LiveFeed',
       photo:
         'https://raw.githubusercontent.com/Grvs44/LiveFeed/refs/heads/main/Frontend/src/assets/LogoClear.png',
+      alt: 'The LiveFeed logo used in our project',
       text: `A cloud-based cooking livestreaming platform created as part of a group project during my third year at university.
 Chefs upload a recipe and schedule a livestream, where they will cook that recipe. During the livestream, they can move through the steps of the recipe so viewers can follow along. Once the livestream has finished, it is converted to an MP4 file and uploaded to an Azure Blob Storage container, so it can be viewed on-demand. The timings for stepping through the recipe are also saved, so viewers can follow the recipe in the same way. 
 The front-end is a React app written in TypeScript and the back-end is an Azure FunctionApp written in Python. Various other cloud services were used, including Azure Static Web Apps, Azure Cosmos DB, Azure Web PubSub, and Google Cloud Livestreaming.`,
