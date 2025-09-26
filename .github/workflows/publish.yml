@@ -27,10 +27,9 @@ jobs:
       - name: Set permissions
         run: chmod -R a+rX ./build
       - name: Upload to action
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v4
         with:
-          name: github-pages
-          path: ./build/*
+          path: ./build
 
   deploy:
     needs: build
