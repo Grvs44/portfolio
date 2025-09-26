@@ -24,8 +24,12 @@ jobs:
           mv Grvs44-portfolio-page-*/* .
       - name: Run build
         run: ./scripts/build.sh
-      - name: Upload to action
-        uses: actions/upload-artifact@v4
+      - name: Move build
+        run: |
+          mv build portfolio
+          mkdir build
+          mv portfolio build/portfolio
+      - name: Deploy to Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          name: page
-          path: ./build/*
+          folder: build
