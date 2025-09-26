@@ -24,8 +24,6 @@ jobs:
           mv Grvs44-portfolio-page-*/* .
       - name: Run build
         run: ./scripts/build.sh
-      - name: Set permissions
-        run: chmod -R a+rX ./build
       - name: Upload to action
         uses: actions/upload-pages-artifact@v4
         with:
