@@ -111,7 +111,7 @@ I designed this page so that the code and the content are separate, so anyone ca
         },
         {
           text: 'View content on GitHub',
-          url: 'https://github.com/Grvs44/portfolio-page-content',
+          url: 'https://github.com/Grvs44/portfolio',
         },
       ],
     },
