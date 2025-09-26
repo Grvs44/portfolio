@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -29,7 +29,22 @@ jobs:
           mv build portfolio
           mkdir build
           mv portfolio build/portfolio
-      - name: Deploy to Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload to action
+        uses: actions/upload-artifact@v4
         with:
-          folder: build
+          name: page
+          path: ./build/*
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
