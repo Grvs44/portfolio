@@ -24,11 +24,6 @@ jobs:
           mv Grvs44-portfolio-page-*/* .
       - name: Run build
         run: ./scripts/build.sh
-      - name: Move build
-        run: |
-          mv build portfolio
-          mkdir build
-          mv portfolio build/portfolio
       - name: Upload to action
         uses: actions/upload-artifact@v4
         with:
@@ -43,7 +38,7 @@ jobs:
       pages: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://grvs44.github.io/portfolio/
     steps:
       - name: Deploy to Pages
         id: deployment
