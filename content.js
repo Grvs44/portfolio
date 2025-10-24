@@ -20,6 +20,7 @@ Outside of university I've been working on a few projects, including a Progressi
     'https://github.com/Grvs44',
     'https://linkedin.com/in/grvs44',
     'https://bsky.app/profile/grvs44.bsky.social',
+    'mailto:grvs44@duck.com',
   ],
   projects: [
     {
