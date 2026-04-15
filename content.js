@@ -19,7 +19,7 @@ Outside of university I've been working on a few projects, including a Progressi
   socials: [
     'https://github.com/Grvs44',
     'https://linkedin.com/in/elligreaves',
-    'https://bsky.app/profile/grvs44.bsky.social',
+    'https://bsky.app/profile/elligreaves.bsky.social',
     'mailto:grvs44@duck.com',
   ],
   projects: [
